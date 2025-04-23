@@ -22,7 +22,7 @@ from google.genai import types
 
 import datetime, os
 
-key = os.getenv('personal_openAI_key')
+key = os.getenv('OPENAI_KEY')
 
 session_service = InMemorySessionService()
 artifact_service = InMemoryArtifactService()
