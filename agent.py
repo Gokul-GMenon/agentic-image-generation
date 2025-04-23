@@ -33,16 +33,8 @@ img_model = 'dall-e-3'
 
 # MODULE TO SAVE THE GENERATED IMAGE THROUGH PROXY SERVER
 def save_image(image_link, prompt):
-    # Obtaining the image from proxy server
-    # Replace with your proxy server's public IP or domain
-    proxy_server_url = "https://proxy-flask-repo.onrender.com/proxy_image"
-    params = {"url": image_link}
-
     try:
-        response = requests.get(proxy_server_url, params=params)
-        response.raise_for_status()
-        print("Status Code:", response.status_code)
-        print("Content-Type:", response.headers.get("Content-Type"))
+        response = requests.get(image_link)
         with open(f"{prompt}.png", "wb") as f:
             f.write(response.content)
         print(f"✅ {prompt}.png saved successfully!!")
