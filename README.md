@@ -8,3 +8,4 @@ An simple project that uses agentic approach (using google's ADK) for prompt to 
 4. You can the image model being used between dal-e-2 or dal-e-3 and corresponding resolutions if applicable in agent.py.
 5. Run the project using `streamlit run streamlit-frontend.py`.
 
+![watermark-removed](https://github.com/user-attachments/assets/0ad31949-09ec-42c6-9074-f12ac47fcdb0)
